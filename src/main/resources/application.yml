@@ -6,15 +6,10 @@ server:
         min-spare-threads: 30
     port: 8081
     context-path: /
-
 spring:
-    datasource:
-        url: jdbc:mysql://localhost/vod?useSSL=false
-        username: root
-        password: Feng123456
-        driver-class-name: com.mysql.jdbc.Driver
-    thymeleaf:
-        cache: false
+    profiles:
+        active: dev
+
 storage:
     webPath: http://localhost
     imagePath: http://localhost
