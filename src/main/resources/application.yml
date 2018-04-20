@@ -9,7 +9,16 @@ server:
 spring:
     profiles:
         active: dev
+    devtools:
+        restart:
+           exclude: static/**,public/**
 
 storage:
     webPath: http://localhost
     imagePath: http://localhost
+    
+vod:
+    appid: wxfed4cb908fedfd14
+    secret: 50f5974e8e2f15eb86fccbe258efa959
+
+

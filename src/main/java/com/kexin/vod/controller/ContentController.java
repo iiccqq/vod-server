@@ -26,4 +26,5 @@ public class ContentController {
 	Content getContentById(@PathVariable Integer contentId) {
 		return contentDao.getContentById(contentId);
 	}
+	
 }
